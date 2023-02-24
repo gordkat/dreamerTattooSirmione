@@ -17,7 +17,7 @@ function App() {
     <div>
       <Header />
 
-      <Routes basename="/dreamerTattooSirmione">
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tricopigmentation" element={<Tricopigmentation />} />
         <Route path="/gallery" element={<Gallery />} />
