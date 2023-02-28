@@ -16,15 +16,13 @@ function App() {
   return (
     <div>
       <Header />
-
-      <Routes basename="/dreamerTattooSirmione">
+      <Routes basename="dreamerTattooSirmione">
         <Route path="/" element={<HomePage />} />
         <Route path="/tricopigmentation" element={<Tricopigmentation />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/aftercare" element={<Aftercare />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
       <Footer />
     </div>
     // <div className="App">

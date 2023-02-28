@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import styles from "./Header.module.css";
 import dreamerLogo from "../images/dreamerLogo12grey.png";
@@ -7,7 +7,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.containerHeader}>
         <div className={styles.logo}>
-          <Link
+          <NavLink
             to="/"
             className={styles.logoLink}
             arial-label="logo Dreamer Tattoo"
@@ -18,34 +18,34 @@ const Header = () => {
               width="394"
               height="58"
             />
-          </Link>
+          </NavLink>
         </div>
         <nav className={styles.wrapperNav}>
           <ul className={styles.menu}>
             <li>
-              <Link to="/" className={styles.btn}>
-                Studio
-              </Link>
+              <NavLink to="/" className={styles.btn}>
+                studio
+              </NavLink>
             </li>
             <li>
-              <Link to="/tricopigmentation" className={styles.btn}>
+              <NavLink to="/tricopigmentation" className={styles.btn}>
                 tricopigmentazione
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/gallery" className={styles.btn}>
-                Galeria
-              </Link>
+              <NavLink to="/gallery" className={styles.btn}>
+                tatuaggi
+              </NavLink>
             </li>
             <li>
-              <Link to="/aftercare" className={styles.btn}>
-                Cura del tattoo
-              </Link>
+              <NavLink to="/aftercare" className={styles.btn}>
+                cura del tattoo
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" className={styles.btn}>
-                Contatti
-              </Link>
+              <NavLink to="/contact" className={styles.btn}>
+                contatti
+              </NavLink>
             </li>
           </ul>
           <Navbar />

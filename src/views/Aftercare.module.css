@@ -25,7 +25,7 @@
   color: #495057;
 }
 
-@media screen and (min-widt: 620px) {
+@media screen and (min-width: 620px) {
   .titleAftercare {
     font-size: 24px;
   }

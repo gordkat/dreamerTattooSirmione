@@ -10,7 +10,7 @@ const Navbar = () => {
   const refNavbar = useRef();
   useEffect(() => {
     const handerCloseMenu = (event) => {
-      console.log(refNavbar.current);
+      // console.log(refNavbar.current);
       if (
         navbarOpen &&
         refNavbar.current &&
@@ -58,7 +58,7 @@ const Navbar = () => {
             className={styles.burgerBtn}
             onClick={() => setNavbarOpen(false)}
           >
-            Studio
+            studio
           </Link>
         </li>
         <li>
@@ -76,7 +76,7 @@ const Navbar = () => {
             className={styles.burgerBtn}
             onClick={() => setNavbarOpen(false)}
           >
-            Galeria
+            tatuaggi
           </Link>
         </li>
         <li>
@@ -85,7 +85,7 @@ const Navbar = () => {
             className={styles.burgerBtn}
             onClick={() => setNavbarOpen(false)}
           >
-            Cura del tattoo
+            cura del tattoo
           </Link>
         </li>
         <li>
@@ -94,7 +94,7 @@ const Navbar = () => {
             className={styles.burgerBtn}
             onClick={() => setNavbarOpen(false)}
           >
-            Contatti
+            contatti
           </Link>
         </li>
       </ul>

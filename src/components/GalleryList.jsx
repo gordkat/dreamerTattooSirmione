@@ -65,11 +65,11 @@ const photos = [
   },
 ];
 
-const GalleryList = () => {
+const GalleryList = ({ onModal }) => {
   return (
     <ul className={styles.galleryList}>
       {photos.map((photo) => (
-        <GalleryItem photo={photo} key={photo.alt} />
+        <GalleryItem photo={photo} key={photo.alt} onModal={onModal} />
       ))}
     </ul>
   );
